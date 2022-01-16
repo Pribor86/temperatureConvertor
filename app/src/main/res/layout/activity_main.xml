@@ -6,14 +6,30 @@
     android:orientation="vertical"
     android:background="@color/myColor"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/myColor"
+        >
 
     <EditText
         android:id="@+id/inputTemp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:ems="6"
         android:inputType="numberSigned|numberDecimal"
         />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -35,13 +51,13 @@
             android:text="@string/fahrenheit" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calc"
-        android:onClick="calcTemp"
-        android:layout_alignStart="@+id/radioGroup"
-        android:layout_below="@+id/radioGroup"
-        android:layout_marginTop="20dp"/>
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/calc"-->
+<!--        android:onClick="calcTemp"-->
+<!--        android:layout_alignStart="@+id/radioGroup"-->
+<!--        android:layout_below="@+id/radioGroup"-->
+<!--        android:layout_marginTop="20dp"/>-->
 </LinearLayout>
